@@ -1,9 +1,7 @@
 import os
 import sys
 def start_bot(token):
-    print("hello")
-    while(True):
-        pass
+    pass
 
 
 token = os.environ.get('tg_token')
