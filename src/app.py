@@ -1,7 +1,7 @@
 import os
 import sys
 def start_bot(token):
-    print(token + "\n Dima lox pishet front")
+    print(token + "\n Dima lox pishet front2")
 
 
 token = os.environ.get('tg_token')
