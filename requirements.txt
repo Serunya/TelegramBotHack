@@ -1,8 +1,10 @@
 numpy
 pillow
 pytesseract
-opencv-python-headless
-<<<<<<< HEAD:requerments.txt
+rembg
+imutils
+dlib
 aiogram
-=======
->>>>>>> main:requirements.txt
+opencv-python
+pyzbar
+numpy
