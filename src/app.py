@@ -2,6 +2,7 @@ import os
 import sys
 import asyncio
 import logging
+import commands
 from aiogram import Bot, Dispatcher
 from aiogram.filters import CommandStart
 
