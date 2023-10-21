@@ -24,7 +24,7 @@ class DataBase():
         self.connection.close()
     async def select_data(self, mode:str):
         if self.connection:
-
+            pass
     async def insert_data(self):
         pass
     async def create_table(self):
