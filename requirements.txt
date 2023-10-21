@@ -2,7 +2,4 @@ numpy
 pillow
 pytesseract
 opencv-python-headless
-<<<<<<< HEAD:requerments.txt
 aiogram
-=======
->>>>>>> main:requirements.txt
