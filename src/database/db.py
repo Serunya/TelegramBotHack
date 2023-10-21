@@ -2,14 +2,13 @@ import psycopg2 as postDB
 from psycopg2 import Error
 from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 import asyncio
+import aiosqlite
+
 
 class DataBase():
-    def __init__(self, dbname, host, user, password, port):
-        self.dbname = dbname
-        self.host = host
-        self.user = user
-        self.password = password
-        self.port = port
+    def __init__(self,):
+        pass
+
     async def createconnection(self):
         try:
             self.connection = postDB.connect(dbname=self.dbname, user=self.dbname, password=self.password, host=self.host, port=self.port)
@@ -18,7 +17,7 @@ class DataBase():
         except (Exception, Error):
             self.connection.close()
             self.cursor.close()
-            print('____Alert: cant connect to data base with error ____\n', Error)
+            await self.logger.debug(f'____Alert: cant connect to data base with error ____\n {Error}')
     async def closeconnection(self):
         self.cursor.close()
         self.connection.close()
@@ -33,3 +32,5 @@ class DataBase():
         pass
     async def update_table(self):
         pass
+
+

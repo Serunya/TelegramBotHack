@@ -1,6 +1,7 @@
 import sys
 import asyncio
 import logging
+import commands
 from aiogram import Bot, Dispatcher
 from aiogram.enums import ParseMode
 
