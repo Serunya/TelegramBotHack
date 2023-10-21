@@ -3,7 +3,7 @@ import sys
 import asyncio
 import logging
 from aiogram import Bot, Dispatcher
-import commands
+from . import commands
 from aiogram.filters import CommandStart
 
 dp = Dispatcher()
